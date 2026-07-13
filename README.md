@@ -50,7 +50,6 @@
       text-align: left;
     }
 
-    /* NAVBAR */
 
     nav{
       position:fixed;
@@ -90,7 +89,6 @@
       color:#045680;
     }
 
-    /* HERO */
 
     .hero{
       display:flex;
@@ -133,7 +131,6 @@
       transform:translateY(-2px);
     }
 
-    /* SECTION */
 
     section{
       padding:40px 0;
@@ -156,7 +153,6 @@
       color:#64748b;
     }
 
-    /* ABOUT */
 
     .about-grid{
       display:grid;
@@ -181,7 +177,6 @@
       color:#475569;
     }
 
-    /* SERVICES */
 
     .services-grid{
       display:grid;
@@ -214,7 +209,6 @@
       font-size:0.98rem;
     }
 
-    /* GALLERY */
 
     .gallery-grid{
       display:grid;
@@ -228,10 +222,6 @@
       object-fit:cover;
       transition:0.4s;
     }
-
-
-
-    /* CONTACT */
 
     .contact-wrapper{
       display:grid;
@@ -286,7 +276,6 @@
       cursor:pointer;
     }
 
-    /* FOOTER */
 
     footer{
       background:#79398c;
@@ -299,7 +288,6 @@
       opacity:0.8;
     }
 
-    /* RESPONSIVE */
 
     @media(max-width:900px){
 
@@ -321,12 +309,9 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-
   <nav>
     <div class="container nav-wrapper">
        <img src="file_000000008848724698d5424efc359949.png" style="width: 110px; height: 50px;">
-
       <div class="nav-links">
         <a href="#services">Therapie</a>
         <a href="#about">Über mich</a>
@@ -336,8 +321,6 @@
       </div>
     </div>
   </nav>
-
-  <!-- HERO -->
 
   <section class="hero" style="margin-top:50px">
     <div class="hero-container">
@@ -350,11 +333,8 @@
 
 
   <section id="services">
-
     <div class="container" style="max-width: 800px;">
-
       <div class="services-grid">
-
         <div class="service-card">
           <img src="Aeste.jpg" alt="">
           <div class="service-content">
@@ -370,7 +350,6 @@
             </p>
           </div>
         </div>
-
         <div class="service-card">
           <img src="SteinhaufenSee.jpg" alt="">
           <div class="service-content">
@@ -394,18 +373,15 @@
         </div>
         <div class="service-card">
           <img src="Strand.jpg" alt="">
-
           <div class="service-content">
             <h3>Einzeltherapie</h3>
             <p>
-              Im Einzelsetting bekommen Sie die Zeit, die Sie brauchen, um sich mit Ihrem Alltag auseinanderzusetzen. Persönliche Schwierigkeiten, aber vor allem persönliche Stärken und Ressourcen stehen im Vordergrund. Die Einzeltherapie findet in der Regel in meiner Praxis statt und beinhaltet u.a. Gespräche, kreative Betätigungen und Alltagstätigkeiten. 
+              Im Einzelsetting bekommen Sie die Zeit, die Sie brauchen, um sich mit Ihrem Alltag auseinanderzusetzen. Persönliche Schwierigkeiten, aber vor allem persönliche Stärken und Ressourcen stehen im Vordergrund. Die                 Einzeltherapie findet in der Regel in meiner Praxis statt und beinhaltet u.a. Gespräche, kreative Betätigungen und Alltagstätigkeiten. 
             </p>
           </div>
         </div>
-
         <div class="service-card">
           <img src="Tau.jpg" alt="">
-
           <div class="service-content">
             <h3>Hausbesuche</h3>
             <p>
@@ -413,10 +389,8 @@
             </p>
           </div>
         </div>
-
         <div class="service-card">
           <img src="Pflanzbuch.jpg" style="height: 200px;" alt="">
-
           <div class="service-content">
             <h3>Angehörigenarbeit und Vernetzung mit anderen Berufsgruppen</h3>
             <p>
@@ -424,10 +398,8 @@
             </p>
           </div>
         </div>
-
         <div class="service-card">
           <img src="Hofgarten.jpg" alt="">
-
           <div class="service-content">
             <h3>Ergotherapie auf Englisch</h3>
             <p>
@@ -436,15 +408,10 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </section>
-  <!-- ABOUT -->
-
   <section id="about">
     <div class="container">
-
       <div class="section-title">
         <h2 style="color: #045680">Über mich</h2>
         <p>
@@ -461,14 +428,11 @@
         </p>
       </div>
       <div class="about-grid">
-
         <div class="about-img">
           <img src="Schmetterling.jpg" alt="">
         </div>
-
         <div class="about-text">
           <h3>Beruflicher Werdegang</h3>
-
           <p>
           •	Seit 2025 Psychotherapie Station Hall, ehem. B5 <br>
           •	2024-2025 Caravan, pro mente (Tagesstruktur für Menschen mit Suchterkrankung) - Karenzstelle <br>
@@ -477,7 +441,6 @@
           •	2021-2023 Psychiatrie Innsbruck (v.a. Station für psychosomatische Medizin) - Karenzstelle <br>
           •	2020-2021 PKA Innsbruck (Orthopädie, Neurologie, Pädiatrie) <br>
           •	2017-2020 FH Studium Ergotherapie
-
           </p>
         </div>
         <div class="about-img">
@@ -485,7 +448,6 @@
         </div>
         <div class="about-text">
           <h3>Fortbildungen</h3>
-
           <p>
 •	Neurodivergenz in der Ergotherapie (ergotherapie austria, 2026) <br>
 •	Kreativ-Therapeutisches Schreiben in der Psychiatrie und Psychosomatik (tirol kliniken, 2026)<br>
@@ -494,27 +456,13 @@
 •	Traumasensibles Arbeiten in der Ergotherapie (ergotherapie austria, 2024)<br>
 •	Angst- und Panikstörungen (pro mente akademie, 2024) <br>
 •	Handeln ermöglichen – Trägheit überwinden (ergotherapie austria, 2022)
-
-
           </p>
-
-
         </div>
-
       </div>
     </div>
   </section>
-
-  <!-- SERVICES -->
-
-  
-
-  <!-- GALLERY -->
-
   <section id="gallery">
-
     <div class="container">
-
       <div class="section-title">
         <h2 style="color: #045680">Was ist Ergotherapie</h2>
         <p>
@@ -529,14 +477,8 @@
       </div>
     </div>
   </section>
-
-
-  <!-- ORGA -->
-
   <section id="orga" style="text-align:left">
-
     <div class="container">
-
       <div class="section-title">
         <h2 style="color: #045680">Ablauf und Organisatorisches</h2>
         <p>
@@ -549,50 +491,31 @@
           Ich bin Wahltherapeutin, das bedeutet, dass Sie am Ende jeder Einheit direkt bei mir in der Praxis bezahlen (in bar oder mit Karte) und die Rechnung im Anschluss selbst bei Ihrer Krankenkassa einreichen. Von der Krankenkassa erhalten Sie dann einen Anteil der Kosten rückerstattet. 
         </p><br>
         <div class="orga-text">
-
-
           <h3>Kosten</h3>
           <p>Die Dauer einer Ergotherapie-Einheit wird von der/vom zuständigen Arzt/Ärztin bereits auf die Überweisung geschrieben. Üblich sind v.a. 45 und 60 Minuten Einheiten. Bei geringer Konzentrationsfähigkeit können manchmal auch 30 Minuten Einheiten sinnvoll sein.</p>
           <p>Für eine 45 Minuten Einheit verrechne ich 75€, für 60 Minuten 100€. </p>
           <p>Für Hausbesuche verrechne ich zusätzlich zum oben genannten Honorar einen Pauschalbetrag von 30€ pro Termin.</p> 
           <p>Angehörigengespräche, Vernetzungen mit anderen Berufsgruppen oder dem schulischen/beruflichen Umfeld kann ich nach Absprache mit Ihnen ohne selbstständig ärztliche Zuweisung durchführen und werden ebenfalls verrechnet (20€ pro 15 Minuten). Auch dafür gibt es eine teilweise Kostenrückerstattung von der Krankenkasse. </p>
           <br>
-
           <h3>Was passiert bei den einzelnen Terminen?</h3>
           <p>Die erste Einheit verwende ich für ein ausführliches Gespräch, in dem ich mir ein Bild von Ihnen, Ihrem Alltag und Ihrem Umfeld mache. Wir suchen gemeinsam nach den Betätigungen, die Ihnen nicht (mehr) gelingen wollen, und einigen uns auf ein Therapieziel. </p>
           <p>Die folgenden Therapieeinheiten arbeiten wir gemeinsam daran, dieses Ziel zu erreichen. Das kann durch Gespräche und Beratung erfolgen, durch eine Analyse der Betätigungen, die Ihnen wichtig sind, oder durch kreative Prozesse. Ergotherapie heißt Tun, daher fokussiere ich mich immer wieder mit Ihnen auf die Betätigungen, die Ihnen wichtig sind. Das kann manchmal auch bedeuten, dass wir gemeinsam genau diese Aktivitäten durchführen, um sie zu üben oder auf eventuelle Hindernisse zu untersuchen. 
           </p>
         </div>
-
       </div>
-
-
-
     </div>
-
   </section>
-
-
-
-  <!-- CONTACT -->
-
   <section id="contact">
-
     <div class="container">
-
       <div class="section-title">
         <h2 style="color: #045680">Kontakt</h2>
         <p>
           Ich freue mich auf Ihre Anfrage und berate Sie gerne persönlich.
         </p>
       </div>
-
       <div class="contact-wrapper">
-
         <div class="contact-box">
-
           <h3>Praxisinformationen</h3>
-
           <div class="contact-info">
             <p><strong>Barbara Weinold – Ergotherapie | praxis andersrum</strong></p>
             <p>Musterstraße 24<br>1010 Wien</p>
@@ -600,17 +523,10 @@
             <p>kontakt@barbara-weinold.at</p>
             <p>Mo – Fr: 08:00 – 18:00 Uhr</p>
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
-
-  <!-- FOOTER -->
-
   <footer>
     <div class="container">
       <p>
@@ -618,6 +534,5 @@
       </p>
     </div>
   </footer>
-
 </body>
 </html>
