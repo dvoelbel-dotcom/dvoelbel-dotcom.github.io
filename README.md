@@ -53,7 +53,6 @@
     nav{
       position:fixed;
       top:0;
-      width:100%;
       z-index:1000;
       background:rgba(255,255,255,0.9);
       backdrop-filter:blur(12px);
@@ -309,7 +308,7 @@
 <body>
 
   <nav>
-    <div class="container nav-wrapper">
+    <div class="nav-wrapper">
        <img src="file_000000008848724698d5424efc359949.png" style="width: 110px; height: 50px;">
       <div class="nav-links">
         <a href="#services">Therapie</a>
