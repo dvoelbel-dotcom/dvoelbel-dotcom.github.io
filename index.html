@@ -46,7 +46,7 @@
       margin:auto;
     }
     p{
-      text-align: left;
+      text-align: justify;
     }
 
 
@@ -286,40 +286,94 @@
     footer p{
       opacity:0.8;
     }
+    .menu-toggle{
+    display:none;
+    font-size:2rem;
+    cursor:pointer;
+    color:#045680;
+    user-select:none;
+}
 
 
     @media(max-width:900px){
 
-      .hero h1{
+    .hero h1{
         font-size:2.8rem;
-      }
-
-      .about-grid,
-      .contact-wrapper{
-        grid-template-columns:1fr;
-      }
-
-      .nav-links{
-        display:none;
-      }
     }
+
+    .about-grid,
+    .contact-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:80px;
+        right:20px;
+        flex-direction:column;
+        gap:0;
+        background:white;
+        border-radius:15px;
+        box-shadow:0 10px 30px rgba(0,0,0,.15);
+        overflow:hidden;
+        min-width:250px;
+    }
+
+    .nav-links a{
+        padding:18px 24px;
+        border-bottom:1px solid #eee;
+    }
+
+    .nav-links a:last-child{
+        border-bottom:none;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+}
 
   </style>
 </head>
+<script>
+function toggleMenu(){
+    document.getElementById("navMenu").classList.toggle("active");
+}
+
+// Menü nach Klick auf einen Menüpunkt schließen
+document.querySelectorAll("#navMenu a").forEach(link=>{
+    link.addEventListener("click",()=>{
+        document.getElementById("navMenu").classList.remove("active");
+    });
+});
+</script>
 <body>
 
   <nav>
-    <div class="container nav-wrapper">
-       <img src="file_000000008848724698d5424efc359949.png" style="width: 110px; height: 50px;">
-      <div class="nav-links">
-        <a href="#services">Therapie</a>
-        <a href="#about">Über mich</a>
-        <a href="#gallery">Was ist Ergotherapie</a>
-        <a href="#orga">Ablauf und Organisatorisches</a>
-        <a href="#contact">Kontakt</a>
-      </div>
+  <div class="container nav-wrapper">
+    <img src="file_000000008848724698d5424efc359949.png"
+         style="width:110px;height:50px;">
+
+    <!-- Hamburger Button -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      ☰
     </div>
-  </nav>
+
+    <!-- Navigation -->
+    <div class="nav-links" id="navMenu">
+      <a href="#services" onclick="toggleMenu()">Therapie</a>
+      <a href="#about" onclick="toggleMenu()">Über mich</a>
+      <a href="#gallery" onclick="toggleMenu()">Was ist Ergotherapie</a>
+      <a href="#orga" onclick="toggleMenu()">Ablauf und Organisatorisches</a>
+      <a href="#contact" onclick="toggleMenu()">Kontakt</a>
+    </div>
+  </div>
+</nav>
 
   <section class="hero" style="margin-top:50px">
     <div class="hero-container">
@@ -366,7 +420,7 @@
             •	Eigene Grenzen und Belastungen kennenlernen <br>
             •	Umgang mit Ansprüchen und Perfektionismus <br>
             •	Kennenlernen der eigenen Diagnose und Psychoedukation <br>
-            •	…
+            •	u.v.m.
             </p>
           </div>
         </div>
@@ -389,7 +443,7 @@
           </div>
         </div>
         <div class="service-card">
-          <img src="Pflanzbuch.jpg" style="height: 200px;" alt="">
+          <img src="Himmel.jpg" style="height: 200px;" alt="">
           <div class="service-content">
             <h3>Angehörigenarbeit und Vernetzung mit anderen Berufsgruppen</h3>
             <p>
@@ -411,9 +465,13 @@
   </section>
   <section id="about">
     <div class="container">
-      <div class="section-title">
-        <h2 style="color: #045680">Über mich</h2>
-        <p>
+      <div class="about-grid">
+        <div class="about-img">
+          <img src="file_000000002be87246939ef11d29a66aa3.png" alt="">
+        </div>
+        <div class="about-text">
+          <h3>Über mich</h3>
+         <p>
           Ich bin Barbara Weinold, Ergotherapeutin mit Herz und Seele. Ich weiß aus eigener Erfahrung, wie es ist, die Welt anders zu erleben, und wie schwierig es sein kann, darin den eigenen Weg zu finden. 
         </p>
         <p>
@@ -425,8 +483,7 @@
         <p>
           Ich arbeite mit Jugendlichen und Erwachsenen, die im Alltag an ihre Grenzen kommen und bereit sind, gemeinsam etwas zu verändern – egal, wo diese Grenzen liegen. 
         </p>
-      </div>
-      <div class="about-grid">
+        </div>
         <div class="about-img">
           <img src="Schmetterling.jpg" alt="">
         </div>
@@ -516,7 +573,7 @@
         <div class="contact-box">
           <h3>Praxisinformationen</h3>
           <div class="contact-info">
-            <p><strong>Barbara Weinold – Ergotherapie | praxis andersrum</strong></p>
+            <p><strong>Barbara Weinold – Ergotherapie | praxis and&#x258;rsrum</strong></p>
             <p>Musterstraße 24<br>1010 Wien</p>
             <p>+43 660 1234567</p>
             <p>kontakt@barbara-weinold.at</p>
@@ -529,7 +586,7 @@
   <footer>
     <div class="container">
       <p>
-        © 2026 Barbara Weinold – Ergotherapie | praxis andersrum
+        © 2026 Barbara Weinold – Ergotherapie | praxis and&#x258;rsrum
       </p>
     </div>
   </footer>
