@@ -141,7 +141,7 @@
     }
 
     .section-title h2{
-      font-size:2.5rem;
+      font-size:2rem;
       margin-bottom:15px;
       color:#0f172a;
     }
@@ -175,7 +175,6 @@
       margin-bottom:18px;
       color:#475569;
     }
-
 
     .services-grid{
       display:grid;
@@ -293,12 +292,15 @@
     color:#045680;
     user-select:none;
 }
+h1,h2,h3,p{
+    overflow-wrap: break-word;
+}
 
 
     @media(max-width:900px){
 
     .hero h1{
-        font-size:2.8rem;
+        font-size:2rem;
     }
 
     .about-grid,
@@ -321,7 +323,8 @@
         border-radius:15px;
         box-shadow:0 10px 30px rgba(0,0,0,.15);
         overflow:hidden;
-        min-width:250px;
+        width:calc(100vw - 30px);
+        max-width:280px;
     }
 
     .nav-links a{
@@ -336,6 +339,27 @@
     .nav-links.active{
         display:flex;
     }
+    h2 {
+      font-size:1.5rem;
+    }
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:20px;
+    }
+}
+@media (max-width:600px){
+
+    .services-grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+        gap:20px;
+        grid-template-columns:1fr;
+    }
+    .contact-box{
+        padding:20px;
+    }
+
 }
 
   </style>
@@ -378,7 +402,7 @@ document.querySelectorAll("#navMenu a").forEach(link=>{
   <section class="hero" style="margin-top:50px">
     <div class="hero-container">
       <div class="hero-content">
-        <img src="file_000000006c30720aa4b7f2697db9f352.png" style="min-width: 300px;">
+        <img src="file_000000006c30720aa4b7f2697db9f352.png">
       </div>
     </div>
   </section>
@@ -590,5 +614,15 @@ document.querySelectorAll("#navMenu a").forEach(link=>{
       </p>
     </div>
   </footer>
+  <script>
+window.onload = function () {
+    document.querySelectorAll("*").forEach(el => {
+        if (el.scrollWidth > document.documentElement.clientWidth) {
+            console.log(el);
+            el.style.outline = "2px solid red";
+        }
+    });
+};
+</script>
 </body>
 </html>
