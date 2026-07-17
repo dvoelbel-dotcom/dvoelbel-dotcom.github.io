@@ -46,7 +46,7 @@
       margin:auto;
     }
     p{
-      text-align: justify;
+      text-align: left;
     }
 
 
@@ -167,6 +167,12 @@
 
     .about-text h3{
       font-size:2rem;
+      margin-bottom:20px;
+      color:#045680;
+    }
+
+    .about-text h4{
+      font-size:1.5rem;
       margin-bottom:20px;
       color:#045680;
     }
@@ -496,7 +502,7 @@ document.querySelectorAll("#navMenu a").forEach(link=>{
         <div class="about-text">
           <h3>Über mich</h3>
          <p>
-          Ich bin Barbara Weinold, Ergotherapeutin mit Herz und Seele. Ich weiß aus eigener Erfahrung, wie es ist, die Welt anders zu erleben, und wie schwierig es sein kann, darin den eigenen Weg zu finden. 
+          Ich bin Barbara Weinold, Ergotherapeutin mit Herz und Seele. Ich weiß aus eigener Erfahrung, wie es ist, die Welt and&#x258;rs zu erleben, und wie schwierig es sein kann, darin den eigenen Weg zu finden. 
         </p>
         <p>
           Gemeinsam mit meiner fachlichen Erfahrung aus zahlreichen Jobs in psychiatrischen Settings gelingt es mir dadurch, auf jede:n Klient:in ganz individuell einzugehen – mit Verständnis und Motivation zur Veränderung.
@@ -543,7 +549,7 @@ document.querySelectorAll("#navMenu a").forEach(link=>{
   </section>
   <section id="gallery">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title about-text">
         <h2 style="color: #045680">Was ist Ergotherapie</h2>
         <p>
           Ergotherapie hilft dabei, die eigene Handlungsfähigkeit wiederherzustellen. Denn wir Menschen sind im Grunde gerne tätig – wir haben Spaß an unseren alltäglichen Betätigungen (wenn auch an manchen mehr als an anderen), wir TUN gerne. 
@@ -559,7 +565,7 @@ document.querySelectorAll("#navMenu a").forEach(link=>{
   </section>
   <section id="orga" style="text-align:left">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title about-text">
         <h2 style="color: #045680">Ablauf und Organisatorisches</h2>
         <p>
           Bevor Sie zu mir kommen, benötigen Sie eine Überweisung von Ihrer/Ihrem Haus- oder besser Ihrer/Ihrem Facharzt/-ärztin. Auf der Überweisung steht die Anzahl der Ergotherapie-Einheiten, die Dauer einer Einheit und ob Sie diese als Hausbesuche benötigen. 
@@ -571,13 +577,13 @@ document.querySelectorAll("#navMenu a").forEach(link=>{
           Ich bin Wahltherapeutin, das bedeutet, dass Sie am Ende jeder Einheit direkt bei mir in der Praxis bezahlen (in bar oder mit Karte) und die Rechnung im Anschluss selbst bei Ihrer Krankenkassa einreichen. Von der Krankenkassa erhalten Sie dann einen Anteil der Kosten rückerstattet. 
         </p><br>
         <div class="orga-text">
-          <h3>Kosten</h3>
+          <h4>Kosten</h4>
           <p>Die Dauer einer Ergotherapie-Einheit wird von der/vom zuständigen Arzt/Ärztin bereits auf die Überweisung geschrieben. Üblich sind v.a. 45 und 60 Minuten Einheiten. Bei geringer Konzentrationsfähigkeit können manchmal auch 30 Minuten Einheiten sinnvoll sein.</p>
           <p>Für eine 45 Minuten Einheit verrechne ich 75€, für 60 Minuten 100€. </p>
           <p>Für Hausbesuche verrechne ich zusätzlich zum oben genannten Honorar einen Pauschalbetrag von 30€ pro Termin.</p> 
           <p>Angehörigengespräche, Vernetzungen mit anderen Berufsgruppen oder dem schulischen/beruflichen Umfeld kann ich nach Absprache mit Ihnen ohne selbstständig ärztliche Zuweisung durchführen und werden ebenfalls verrechnet (20€ pro 15 Minuten). Auch dafür gibt es eine teilweise Kostenrückerstattung von der Krankenkasse. </p>
           <br>
-          <h3>Was passiert bei den einzelnen Terminen?</h3>
+          <h4>Was passiert bei den einzelnen Terminen?</h3>
           <p>Die erste Einheit verwende ich für ein ausführliches Gespräch, in dem ich mir ein Bild von Ihnen, Ihrem Alltag und Ihrem Umfeld mache. Wir suchen gemeinsam nach den Betätigungen, die Ihnen nicht (mehr) gelingen wollen, und einigen uns auf ein Therapieziel. </p>
           <p>Die folgenden Therapieeinheiten arbeiten wir gemeinsam daran, dieses Ziel zu erreichen. Das kann durch Gespräche und Beratung erfolgen, durch eine Analyse der Betätigungen, die Ihnen wichtig sind, oder durch kreative Prozesse. Ergotherapie heißt Tun, daher fokussiere ich mich immer wieder mit Ihnen auf die Betätigungen, die Ihnen wichtig sind. Das kann manchmal auch bedeuten, dass wir gemeinsam genau diese Aktivitäten durchführen, um sie zu üben oder auf eventuelle Hindernisse zu untersuchen. 
           </p>
@@ -587,10 +593,14 @@ document.querySelectorAll("#navMenu a").forEach(link=>{
   </section>
   <section id="contact">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title about-text">
         <h2 style="color: #045680">Kontakt</h2>
         <p>
-          Ich freue mich auf Ihre Anfrage und berate Sie gerne persönlich.
+          Ich freue mich auf Ihre Anfrage und berate Sie gerne persönlich. 
+        </p>
+        <p>
+          Falls ich Ihren Anruf einmal nicht persönlich entgegennehmen kann, hinterlassen Sie mir gerne eine Nachricht oder schreiben Sie mir eine E-Mail. Ich melde mich verlässlich bei Ihnen zurück.
+
         </p>
       </div>
       <div class="contact-wrapper">
@@ -598,10 +608,10 @@ document.querySelectorAll("#navMenu a").forEach(link=>{
           <h3>Praxisinformationen</h3>
           <div class="contact-info">
             <p><strong>Barbara Weinold – Ergotherapie | praxis and&#x258;rsrum</strong></p>
-            <p>Musterstraße 24<br>1010 Wien</p>
-            <p>+43 660 1234567</p>
-            <p>kontakt@barbara-weinold.at</p>
-            <p>Mo – Fr: 08:00 – 18:00 Uhr</p>
+            <p>Leopoldstraße 44<br>6020 Innsbruck</p>
+            <p>0670 651 92 11</p>
+            <p>ergopraxis-andersrum@gmx.at</p>
+            <p>Termine nach Vereinbarung</p>
           </div>
         </div>
       </div>
